@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel Buddy</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<header>
+    <div class="navBar m3">
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img id="topLogo" src="assets/images/logo.jpg">Travel Buddy</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+            </div>
+        </nav>
+    </div>
+    <div id="logoSearch" class="nav-wrapper blue-grey lighten-4 row">
+        <div class="col m8 s12 right title-div">
+            <img src="assets/images/aroundtheworld.jpg" alt="Around The World" class="logo-img" />
+            <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
+        </div>
+        <div class="input-field col m4 s11 left">
+            <div class="col m1"></div>
+            <input type="text" id="search-input" spellcheck="false" class="black-text" />
+            <label>Where would you like to go?</label>
+            <i class="material-icons prefix" id="findCity">search</i>
+            <div class="temp black-text"></div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="row">
+                <div class="col m4 s12">
+                    <div class="card blue-grey lighten-4 z-depth-3">
+                        <div id="attractionList" class="card-content black-text">
+                            <span class="card-title">Restaurants</span>
+                            <div id="rest_results"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col m8 s12">
+                    <div class="card blue-grey lighten-4 z-depth-3">
+                        <div id="lodging" class="card-content">
+                            <span class="card-title">Lodging</span>
+                            <div id="lodge_results" class="center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h5>Search Error</h5>
+            <p>
+                Your entry was not a valid city name. Please check your spelling and
+                try again.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue-grey btn-flat">OK</a>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL2oodMcHGbeLT74urFWjCNtPKLfbqkwo&libraries=places"></script>
+    <script src="randl.js"></script>
+</body>
+<!-- Travel Buddy logo -->
+<footer>
+    <h6 class="creators"><img class="footerLogo" src="assets/images/logo.jpg">Created by Maverick, Chloe, Lorraine, and
+        Blaine </h6>
+</footer>
+
+</html>

@@ -1,0 +1,121 @@
+/* Optional: Makes the sample page fill the window. */
+html body {
+  background-color: rgb(66, 87, 110);
+  background: url("https://scontent.fhou1-1.fna.fbcdn.net/v/t31.0-8/1009683_10200595231593150_1336017382_o.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=_BJmYGGUxLIAX8KOJcd&_nc_ht=scontent.fhou1-1.fna&oh=3777f3b75a70557d424fb58f3f36a210&oe=5F62EA7C");
+  background-position: center;
+}
+
+/* label color "Where do you want to go?" */
+.input-field label {
+  color: #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #26a69a;
+}
+
+.input-field .prefix {
+  color: #000;
+}
+
+#search-input {
+  border-bottom-color: #000;
+  font-size: 18px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#mapCard {
+  height: 400px;
+}
+
+#attractionList {
+  height: 400px;
+}
+
+.modal {
+  left: 0;
+  right: 0;
+  background-color: #eceff1;
+  padding: 0;
+  max-height: 40%;
+  width: 35%;
+  will-change: top, opacity;
+}
+
+img {
+  height: 100%;
+}
+
+.title-div {
+  height: 100px;
+  text-align: center;
+  display: block;
+}
+
+/*350px width*/
+@media (max-width: 350px) {
+  .logo-img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-img {
+    width: 350px;
+  }
+}
+
+.footerLogo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.creators {
+  text-align: center;
+  font-family: cursive;
+  color: skyblue;
+}
+
+#appName {
+  color: skyblue;
+  font-family: cursive;
+}
+
+#topLogo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.nav-wrapper {
+  background-color:  rgb(66, 87, 110);
+}
+
+#mapCard, .logo-img, #attractionList {
+  border: outset;
+  border-color: skyblue;
+}
+
+#logoSearch {
+  border-top: outset;
+  border-bottom: outset;
+  border-color: skyblue;
+}
+
+nav .brand-logo {
+  font-family: cursive;
+  color: skyblue;
+}
